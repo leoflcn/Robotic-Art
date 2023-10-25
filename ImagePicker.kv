@@ -1,0 +1,13 @@
+#:kivy 1.11.1
+
+<Widgets>:
+    cols:2
+    id:my_widgets
+ 
+    FileChooserIconView:
+        id:filechooser
+        on_selection:my_widgets.Selected(filechooser.selection)
+ 
+    Image:
+        id:image
+        source:""
